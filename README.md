@@ -38,6 +38,10 @@ $ npm install -g json-server
 
 $ json-server --watch src/backend.json --port 3001
 
+o en powershell:
+
+$ npx json-server --watch src/backend.json --port 3001
+
 Terminal front:
 
 $ npm install
