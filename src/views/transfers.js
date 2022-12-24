@@ -1,10 +1,12 @@
 import React, { useState, useContext } from "react"
 import { Context } from "../store/appContext"
+
 const Transfers = () => {
-const { store, actions } = useContext(Context)
+
+    const { store, actions } = useContext(Context)
 
     const [newTransfer, setNewTransfer] = useState({})
- 
+
 
     const handleChange = (e) => {
         setNewTransfer({ ...newTransfer, [e.target.name]: e.target.value })
@@ -36,18 +38,19 @@ const { store, actions } = useContext(Context)
                                 }),
                                 headers: { "Content-type": "application/json; charset=UTF-8" }
                             })
-                            .then(res => {
-                                if (res.status === 200) {
-                                    actions.setItem("change", store.change === 0 ? 1 : 0)
-                                    actions.setItem("userAccount", {
-                                        id: store.userAccount.id,
-                                        IBAN: store.userAccount.IBAN,
-                                        ammount: parseFloat(store.userAccount.ammount) - parseFloat(newTransfer.ammount),
-                                        user_uid: store.userAccount.user_uid
-                                    })
-                                    alert(`Transferencia completada. Saldo actual: ${parseFloat(store.userAccount.ammount)}`)
-                                    
-                                }})
+                                .then(res => {
+                                    if (res.status === 200) {
+                                        actions.setItem("change", store.change === 0 ? 1 : 0)
+                                        actions.setItem("userAccount", {
+                                            id: store.userAccount.id,
+                                            IBAN: store.userAccount.IBAN,
+                                            ammount: parseFloat(store.userAccount.ammount) - parseFloat(newTransfer.ammount),
+                                            user_uid: store.userAccount.user_uid
+                                        })
+                                        alert(`Transferencia completada. Saldo actual: ${parseFloat(store.userAccount.ammount)}`)
+
+                                    }
+                                })
                         }
                     })
 

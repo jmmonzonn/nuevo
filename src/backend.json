@@ -3,107 +3,186 @@
     {
       "id": 1,
       "uid": "63q1WIyNuhXFNAif7MbIb9f82aJ2",
-      "url": "https://rickandmortyapi.com/api/character/149"
+      "url": "https://rickandmortyapi.com/api/character/66"
     },
     {
       "id": 2,
       "uid": "1HOuRyTNLEUKX1zB9wVbzHarKTm1",
-      "url": "https://rickandmortyapi.com/api/character/27"
+      "url": "https://rickandmortyapi.com/api/character/15"
     },
     {
       "id": 3,
       "uid": "AMZbGGThLFMrbfoNQKe5cVXdYmW2",
-      "url": "https://rickandmortyapi.com/api/character/65"
+      "url": "https://rickandmortyapi.com/api/character/11"
     },
     {
       "id": 4,
       "uid": "wKoMvUdplqf1MZOkRXxwB0Ku42B2",
-      "url": "https://rickandmortyapi.com/api/character/34"
+      "url": "https://rickandmortyapi.com/api/character/29"
     },
     {
       "id": 5,
       "uid": "MPTpyC14gjWELzopSA4ByEqQiWM2",
-      "url": "https://rickandmortyapi.com/api/character/126"
+      "url": "https://rickandmortyapi.com/api/character/20"
     },
     {
       "id": 6,
       "uid": "g2vYlakay3TCFQdNUCurR31kPhD3",
-      "url": "https://rickandmortyapi.com/api/character/356"
+      "url": "https://rickandmortyapi.com/api/character/27"
+    },
+    {
+      "id": 7,
+      "uid": "gsS5NyKCyrRyZ7wIdOUvYd505WC2",
+      "url": "https://rickandmortyapi.com/api/character/72"
+    },
+    {
+      "id": 8,
+      "uid": "WEXGWWtUbUh9p6IIgiaj4C5qxCB2",
+      "url": "https://rickandmortyapi.com/api/character/44"
+    },
+    {
+      "id": 9,
+      "uid": "lhU02I1LapTHkXxsolNmTSwvCLt1",
+      "url": "https://rickandmortyapi.com/api/character/98"
+    },
+    {
+      "id": 10,
+      "uid": "p93MCFZB0FazT3CFoRUI4kEJtQq1",
+      "url": "https://rickandmortyapi.com/api/character/231"
     }
   ],
   "accounts": [
     {
       "id": 1,
-      "IBAN": "ES34546790079892342",
-      "ammount": 0,
+      "IBAN": "ES340255674390",
+      "ammount": 234.53,
       "user_uid": "63q1WIyNuhXFNAif7MbIb9f82aJ2"
     },
     {
       "id": 2,
-      "IBAN": "ES34546790079892343",
-      "ammount": -2364358870297213,
+      "IBAN": "ES340255674391",
+      "ammount": 674.21,
       "user_uid": "1HOuRyTNLEUKX1zB9wVbzHarKTm1"
     },
     {
       "id": 3,
-      "IBAN": "ES34546790079892344",
+      "IBAN": "ES340255674392",
       "ammount": 5995.98,
       "user_uid": "AMZbGGThLFMrbfoNQKe5cVXdYmW2"
     },
     {
       "id": 4,
-      "IBAN": "ES34546790079892345",
+      "IBAN": "ES340255674393",
       "ammount": 3520,
       "user_uid": "wKoMvUdplqf1MZOkRXxwB0Ku42B2"
     },
     {
       "id": 5,
-      "IBAN": "ES34546790079892346",
-      "ammount": 2364363735007527,
+      "IBAN": "ES340255674394",
+      "ammount": 35007091.7,
       "user_uid": "MPTpyC14gjWELzopSA4ByEqQiWM2"
     },
     {
       "id": 6,
-      "IBAN": "ES34546790079892347",
-      "ammount": -2834.0200000000004,
+      "IBAN": "ES340255674395",
+      "ammount": 6324.09,
       "user_uid": "g2vYlakay3TCFQdNUCurR31kPhD3"
+    },
+    {
+      "id": 7,
+      "IBAN": "ES340255674396",
+      "ammount": 43987.65,
+      "user_uid": "gsS5NyKCyrRyZ7wIdOUvYd505WC2"
+    },
+    {
+      "id": 8,
+      "IBAN": "ES340255674397",
+      "ammount": 53.21,
+      "user_uid": "WEXGWWtUbUh9p6IIgiaj4C5qxCB2"
+    },
+    {
+      "id": 9,
+      "IBAN": "ES340255674398",
+      "ammount": 0,
+      "user_uid": "lhU02I1LapTHkXxsolNmTSwvCLt1"
+    },
+    {
+      "id": 10,
+      "IBAN": "ES340255674399",
+      "ammount": 53.78,
+      "user_uid": "p93MCFZB0FazT3CFoRUI4kEJtQq1"
     }
   ],
   "debts": [
     {
       "id": 1,
-      "initial_debt": 600,
-      "actual_debt": -267.02,
-      "mensual_payment": 35.25,
+      "initial_debt": 5400,
+      "actual_debt": 2376,
+      "mensual_payment": 353.25,
       "user_uid": "63q1WIyNuhXFNAif7MbIb9f82aJ2"
     },
     {
       "id": 2,
       "initial_debt": 600,
-      "actual_debt": -55.519999999999996,
+      "actual_debt": 96.32,
       "mensual_payment": 35.25,
-      "user_uid": "MPTpyC14gjWELzopSA4ByEqQiWM2"
+      "user_uid": "1HOuRyTNLEUKX1zB9wVbzHarKTm1"
     },
     {
       "id": 3,
-      "initial_debt": 600,
-      "actual_debt": -90.77,
-      "mensual_payment": 35.25,
+      "initial_debt": 6000,
+      "actual_debt": 1990.77,
+      "mensual_payment": 345.54,
       "user_uid": "AMZbGGThLFMrbfoNQKe5cVXdYmW2"
     },
     {
       "id": 4,
-      "initial_debt": 600,
-      "actual_debt": -90.77,
-      "mensual_payment": 35.25,
+      "initial_debt": 9000,
+      "actual_debt": 7802,
+      "mensual_payment": 750,
       "user_uid": "wKoMvUdplqf1MZOkRXxwB0Ku42B2"
     },
     {
       "id": 5,
+      "initial_debt": 7500,
+      "actual_debt": 2822.79,
+      "mensual_payment": 237.65,
+      "user_uid": "MPTpyC14gjWELzopSA4ByEqQiWM2"
+    },
+    {
+      "id": 6,
+      "initial_debt": 60000,
+      "actual_debt": 12900,
+      "mensual_payment": 1750.43,
+      "user_uid": "g2vYlakay3TCFQdNUCurR31kPhD3"
+    },
+    {
+      "id": 7,
+      "initial_debt": 6300,
+      "actual_debt": 6000,
+      "mensual_payment": 120,
+      "user_uid": "gsS5NyKCyrRyZ7wIdOUvYd505WC2"
+    },
+    {
+      "id": 8,
       "initial_debt": 600,
-      "actual_debt": -267.02,
-      "mensual_payment": 35.25,
-      "user_uid": "63q1WIyNuhXFNAif7MbIb9f82aJ2"
+      "actual_debt": 90.77,
+      "mensual_payment": 25.5,
+      "user_uid": "WEXGWWtUbUh9p6IIgiaj4C5qxCB2"
+    },
+    {
+      "id": 9,
+      "initial_debt": 900,
+      "actual_debt": 330.77,
+      "mensual_payment": 35.22,
+      "user_uid": "lhU02I1LapTHkXxsolNmTSwvCLt1"
+    },
+    {
+      "id": 10,
+      "initial_debt": 1600,
+      "actual_debt": 890,
+      "mensual_payment": 67,
+      "user_uid": "p93MCFZB0FazT3CFoRUI4kEJtQq1"
     }
   ]
 }

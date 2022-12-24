@@ -1,6 +1,8 @@
-import React, { useEffect, useState, useContext } from "react"
+import React, { useEffect, useContext } from "react"
 import { Context } from "../store/appContext"
-const Home = (props) => {
+
+const Home = () => {
+
     const { store, actions } = useContext(Context)
 
     useEffect(() => {
@@ -18,18 +20,14 @@ const Home = (props) => {
         })
     }, [])
 
-    const getAllDebts = () => {
-        let totalDebts = store.userDebts?.actual_debt
-        return totalDebts
-    }
 
     return (
 
         <>
-        
+
             {
 
-            store.userAccount &&
+                store.userAccount &&
 
                 <>
 

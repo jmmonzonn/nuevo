@@ -3,7 +3,8 @@ import { logout } from '../auth'
 import React, { useContext } from "react"
 import { Context } from "../store/appContext"
 
-const Header = (props) => {
+const Header = () => {
+
     const { store, actions } = useContext(Context)
 
 
@@ -16,7 +17,10 @@ const Header = (props) => {
     }
     
     return (
-        <div className="fixed w-full max-w-screen-sm md:max-wd-screen-md lg:max-w-screen-lg xl:max-w-screen-xl bg-gray-800 flex items-center justify-between h-14 text-white z-10">
+
+        <>
+
+<div className="fixed w-full max-w-screen-sm md:max-wd-screen-md lg:max-w-screen-lg xl:max-w-screen-xl bg-gray-800 flex items-center justify-between h-14 text-white z-10">
             <div class="flex items-center justify-start md:justify-center pl-3  h-14 bg-gray-800 border-none">
                 <Logo className="w-7 h-7 md:w-10 md:h-10 mr-2 rounded-md overflow-hidden " fill={"white"} />
 
@@ -57,6 +61,9 @@ const Header = (props) => {
                 </ul>
             </div>
         </div>
+        
+        </>
+        
     )
 }
 
