@@ -1,0 +1,109 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "uid": "63q1WIyNuhXFNAif7MbIb9f82aJ2",
+      "url": "https://rickandmortyapi.com/api/character/149"
+    },
+    {
+      "id": 2,
+      "uid": "1HOuRyTNLEUKX1zB9wVbzHarKTm1",
+      "url": "https://rickandmortyapi.com/api/character/27"
+    },
+    {
+      "id": 3,
+      "uid": "AMZbGGThLFMrbfoNQKe5cVXdYmW2",
+      "url": "https://rickandmortyapi.com/api/character/65"
+    },
+    {
+      "id": 4,
+      "uid": "wKoMvUdplqf1MZOkRXxwB0Ku42B2",
+      "url": "https://rickandmortyapi.com/api/character/34"
+    },
+    {
+      "id": 5,
+      "uid": "MPTpyC14gjWELzopSA4ByEqQiWM2",
+      "url": "https://rickandmortyapi.com/api/character/126"
+    },
+    {
+      "id": 6,
+      "uid": "g2vYlakay3TCFQdNUCurR31kPhD3",
+      "url": "https://rickandmortyapi.com/api/character/356"
+    }
+  ],
+  "accounts": [
+    {
+      "id": 1,
+      "IBAN": "ES34546790079892342",
+      "ammount": 0,
+      "user_uid": "63q1WIyNuhXFNAif7MbIb9f82aJ2"
+    },
+    {
+      "id": 2,
+      "IBAN": "ES34546790079892343",
+      "ammount": -2364358870297213,
+      "user_uid": "1HOuRyTNLEUKX1zB9wVbzHarKTm1"
+    },
+    {
+      "id": 3,
+      "IBAN": "ES34546790079892344",
+      "ammount": 5995.98,
+      "user_uid": "AMZbGGThLFMrbfoNQKe5cVXdYmW2"
+    },
+    {
+      "id": 4,
+      "IBAN": "ES34546790079892345",
+      "ammount": 3520,
+      "user_uid": "wKoMvUdplqf1MZOkRXxwB0Ku42B2"
+    },
+    {
+      "id": 5,
+      "IBAN": "ES34546790079892346",
+      "ammount": 2364363735007527,
+      "user_uid": "MPTpyC14gjWELzopSA4ByEqQiWM2"
+    },
+    {
+      "id": 6,
+      "IBAN": "ES34546790079892347",
+      "ammount": -2834.0200000000004,
+      "user_uid": "g2vYlakay3TCFQdNUCurR31kPhD3"
+    }
+  ],
+  "debts": [
+    {
+      "id": 1,
+      "initial_debt": 600,
+      "actual_debt": -267.02,
+      "mensual_payment": 35.25,
+      "user_uid": "63q1WIyNuhXFNAif7MbIb9f82aJ2"
+    },
+    {
+      "id": 2,
+      "initial_debt": 600,
+      "actual_debt": -55.519999999999996,
+      "mensual_payment": 35.25,
+      "user_uid": "MPTpyC14gjWELzopSA4ByEqQiWM2"
+    },
+    {
+      "id": 3,
+      "initial_debt": 600,
+      "actual_debt": -90.77,
+      "mensual_payment": 35.25,
+      "user_uid": "AMZbGGThLFMrbfoNQKe5cVXdYmW2"
+    },
+    {
+      "id": 4,
+      "initial_debt": 600,
+      "actual_debt": -90.77,
+      "mensual_payment": 35.25,
+      "user_uid": "wKoMvUdplqf1MZOkRXxwB0Ku42B2"
+    },
+    {
+      "id": 5,
+      "initial_debt": 600,
+      "actual_debt": -267.02,
+      "mensual_payment": 35.25,
+      "user_uid": "63q1WIyNuhXFNAif7MbIb9f82aJ2"
+    }
+  ]
+}

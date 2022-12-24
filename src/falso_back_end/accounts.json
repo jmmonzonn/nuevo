@@ -1,0 +1,40 @@
+{
+    "accounts": [
+         {
+            "id": 1,
+            "IBAN": "ES3454679007985",
+            "ammount": 234.98,
+            "user_uid": "63q1WIyNuhXFNAif7MbIb9f82aJ2"
+        }, 
+        {
+            "id": 2,
+            "IBAN": "ES3454679007986",
+            "ammount": 1252133.98,
+            "user_uid": "1HOuRyTNLEUKX1zB9wVbzHarKTm1"        
+        }, 
+        {
+            "id": 3,
+            "IBAN": "ES3454679007987",
+            "ammount": 1.98,
+            "user_uid": "AMZbGGThLFMrbfoNQKe5cVXdYmW2"        
+        }, 
+        {
+            "id": 4,
+            "IBAN": "ES3454679007988",
+            "ammount": 153.98,
+            "user_uid": "wKoMvUdplqf1MZOkRXxwB0Ku42B2"        
+        }, 
+        {
+            "id": 5,
+            "IBAN": "ES3454679007989",
+            "ammount": 12253.98,
+            "user_uid": "MPTpyC14gjWELzopSA4ByEqQiWM2"
+        }, 
+        {
+            "id": 6,
+            "IBAN": "ES34546794523457989",
+            "ammount": 3267.95,
+            "user_uid": "g2vYlakay3TCFQdNUCurR31kPhD3"
+        }
+    ]
+}
