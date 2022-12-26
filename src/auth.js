@@ -10,8 +10,6 @@ export const login = async ({ email, password }) => {
     .signInWithEmailAndPassword(email, password);
   if (res.user) {
     for (let user of backend.users) {
-      console.log(res.user.multiFactor.user.uid)
-      console.log(user.uid)
       if (user.uid === res.user.multiFactor.user.uid) {
         return user
       }

@@ -14,7 +14,6 @@ import injectContext from './store/appContext';
 import Deposits from './views/deposits';
 import Withdrawals from './views/withdrawals';
 import Debts from './views/debts';
-import URL_BACKEND from './falso_back_end/urlBackend';
 
 
 const App = () => {

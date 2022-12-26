@@ -7,6 +7,12 @@ const Withdrawals = () => {
 
     const [newTransfer, setNewTransfer] = useState({})
 
+    const formatter = new Intl.NumberFormat('de-DE', {
+        style: 'currency',
+        currency: 'EUR',
+        minimumFractionDigits: 0
+      })
+
 
     const handleChange = (e) => {
         setNewTransfer({ ...newTransfer, [e.target.name]: e.target.value })
@@ -32,7 +38,7 @@ const Withdrawals = () => {
                         ammount: parseFloat(store.userAccount.ammount) - parseFloat(newTransfer.ammount),
                         user_uid: store.userAccount.user_uid
                     })
-                    alert(`Transferencia completada. Saldo actual: ${parseFloat(store.userAccount.ammount)}`)
+                    alert(`Transferencia completada. Saldo actual: ${formatter.format(parseFloat(store.userAccount.ammount))}`)
 
                 }
             })
@@ -68,9 +74,9 @@ const Withdrawals = () => {
                                 <div>
                                     <button
                                         onClick={handleSubmit}
-                                        class="hover:shadow-form rounded-md bg-[#6A64F1] py-3 px-8 text-center text-base font-semibold text-white outline-none"
+                                        class="hover:shadow-form my-5 rounded-md bg-[#6A64F1] py-3 px-8 text-center text-base font-semibold text-white outline-none"
                                     >
-                                        Submit
+                                        Retirar
                                     </button>
                                 </div>
                             </div>

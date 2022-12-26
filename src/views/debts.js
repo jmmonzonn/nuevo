@@ -24,7 +24,6 @@ const Debts = () => {
             headers: { "Content-type": "application/json; charset=UTF-8" }
         })
             .then(res => {
-                console.log(res.status);
                 if (res.status === 200) {
                     fetch("http://localhost:3001/accounts/" + store.userAccount.id, {
                         method: "PUT",
@@ -51,7 +50,7 @@ const Debts = () => {
                                     mensual_payment: store.userDebts.mensual_payment,
                                     user_uid: store.userDebts.user_uid
                                 })
-                                alert(`Pago completado. Saldo actual: ${parseFloat(store.userAccount.ammount)}`)
+                                alert(`Pago completado. Saldo actual: ${formatter.format(parseFloat(store.userAccount.ammount))}`)
 
                             }
                         })
@@ -89,9 +88,9 @@ const Debts = () => {
                             <div className="w-full grid items-center place-items-center">
                                 <button
                                     onClick={handleSubmit}
-                                    class="hover:shadow-form rounded-md bg-[#6A64F1] py-3 px-8 text-center text-base font-semibold text-white outline-none"
+                                    class="hover:shadow-form my-5 rounded-md bg-[#6A64F1] py-3 px-8 text-center text-base font-semibold text-white outline-none"
                                 >
-                                    Submit
+                                    Adelantar pago
                                 </button>
                             </div>
                         </div>
