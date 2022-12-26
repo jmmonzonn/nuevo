@@ -65,11 +65,6 @@ realizar depósitos y retiradas.
 
 *** probablemente tengas que cambiar la ruta del backend en el archivo .env ***
 
-*** TODO añadir autenticación Google Github y Facebook ***
-
-*** TODO No permitir que los usuarios puedan estar en negativo ***
-
-*** los TODOS podría añadirlos fácilmente pero no puedo por falta de tiempo ***
 
 
 

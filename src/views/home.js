@@ -9,7 +9,7 @@ const Home = () => {
         style: 'currency',
         currency: 'EUR',
         minimumFractionDigits: 0
-      })
+    })
 
     useEffect(() => {
         for (const account of store.backend.accounts) {
@@ -36,10 +36,10 @@ const Home = () => {
 
                 <>
 
-                    <div className="absolute h-screen w-11/12 md:w-9/12 left-16 top-11 md:left-64 bg-gray-700  flex flex-col gap-9  place-items-start ">
-                        <div className=" w-10/12 sm:w-11/12 ">
-                            <div className="flex flex-row bg-gray-800 min-w-full rounded-xl mr-10 ml-6 py-4 mt-8 relative">
-                                <div className='hidden md:flex mx-10  items-center space-x-4 border-red-500'>
+                    <div className="absolute  w-11/12 md:w-8/12 lg:w-10/12 pr-4  top-11 md:left-64 bg-gray-700  flex flex-col gap-9  place-items-start ">
+                        <div className="ml-20 sm:ml-20 md:ml-6 w-10/12 sm:w-11/12 ">
+                            <div className="flex flex-row bg-gray-800 rounded-xl sm:ml-0  py-4 mt-8 relative">
+                                <div className='hidden lg:flex mx-10  items-center space-x-4 border-red-500'>
                                     <a className='flex-shrink-0 w-32 h-32 overflow-hidden rounded-full'>
                                         <img src={store.apiUser?.image} className='object-cover w-full h-full' />
                                     </a>
@@ -56,7 +56,7 @@ const Home = () => {
                                 </div>
 
                             </div>
-                            <div className="flex flex-row bg-gray-800 min-w-full rounded-xl ml-6 mr-4 py-4 mt-6 relative">
+                            <div className="flex flex-row bg-gray-800 min-w-full rounded-xl mr-4 py-4 mt-6 relative">
                                 <div className="px-4 mx-4 pb-4 flex flex-col">
                                     <div className="text-white mt-4 flex flex-row">
                                         <h1 className="mt-1 text-sm md:text-3xl">IBAN</h1>
@@ -65,7 +65,7 @@ const Home = () => {
                                 </div>
 
                             </div>
-                            <div className="flex flex-row bg-gray-800 rounded-xl ml-6 mr-4 py-4 mt-6 min-w-full relative">
+                            <div className="flex flex-row bg-gray-800 rounded-xl mr-4 py-4 mt-6 min-w-full relative">
                                 <div className="px-4 mx-4 pb-4 flex flex-col">
                                     <div className="text-white mt-4 flex flex-row">
                                         <h1 className="mt-1 text-lg md:text-3xl">Deudas </h1>
