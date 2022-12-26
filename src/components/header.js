@@ -55,7 +55,7 @@ const Header = () => {
 
                     store.message ?
 
-                    <div class=" hidden md:flex justify-between items-center h-14 bg-gray-800 header-right">
+                    <div class=" hidden sm:flex justify-between items-center h-14 bg-gray-800 header-right">
                     <div className='flex items-center justify-between mt-1'>
                         <div className='flex items-center space-x-4'>
                             <a className='flex-shrink-0 w-9 h-9 overflow-hidden rounded-full'>

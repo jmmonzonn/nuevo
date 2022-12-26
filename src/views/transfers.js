@@ -19,6 +19,17 @@ const Transfers = () => {
     }
 
     const handleSubmit = () => {
+        if ((parseFloat(store.userAccount.ammount) - parseFloat(newTransfer.ammount)) > 0) {
+            putAccount()
+        } else {
+            actions.setItem("message", "Error en la transferencia. Saldo insuficiente.")
+            // setTimeout(() => {
+            //     actions.setItem("message", null)
+            // }, 5000)
+        }
+    }
+
+    const putAccount = () => {
         store.backend.accounts.forEach((account) => {
             if (account.IBAN === newTransfer.IBAN) {
                 fetch("http://localhost:3001/accounts/" + account.id, {
