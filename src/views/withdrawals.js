@@ -13,12 +13,22 @@ const Withdrawals = () => {
         minimumFractionDigits: 0
     })
 
+    const handleSubmit = () => {
+        if ((parseFloat(store.userAccount.ammount) - parseFloat(newTransfer.ammount)) > 0) {
+            putAccount()
+        } else {
+            actions.setItem("message", "Error en el retiro. Saldo insuficiente.")
+            setTimeout(() => {
+                actions.setItem("message", null)
+            }, 5000)
+        }
+    }
 
     const handleChange = (e) => {
         setNewTransfer({ ...newTransfer, [e.target.name]: e.target.value })
     }
 
-    const handleSubmit = () => {
+    const putAccount = () => {
         fetch("http://localhost:3001/accounts/" + store.userAccount.id, {
             method: "PUT",
             body: JSON.stringify({
