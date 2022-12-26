@@ -9,7 +9,15 @@ const Debts = () => {
         style: 'currency',
         currency: 'EUR',
         minimumFractionDigits: 0
-      })
+    })
+
+    const actualDebt = () => {
+        if ((store.userDebts.actual_debt - store.userDebts.mensual_payment) > store.userDebts.mensual_payment) {
+            return store.userDebts.mensual_payment
+        } else {
+            return (store.userDebts.actual_debt - store.userDebts.mensual_payment)
+        }
+    }
 
     const handleSubmit = () => {
         fetch("http://localhost:3001/debts/" + store.userDebts.id, {
@@ -18,7 +26,7 @@ const Debts = () => {
                 id: store.userDebts.id,
                 initial_debt: store.userDebts.initial_debt,
                 actual_debt: parseFloat(store.userDebts.actual_debt) - parseFloat(store.userDebts.mensual_payment),
-                mensual_payment: store.userDebts.mensual_payment,
+                mensual_payment: actualDebt(),
                 user_uid: store.userDebts.user_uid
             }),
             headers: { "Content-type": "application/json; charset=UTF-8" }
@@ -47,11 +55,11 @@ const Debts = () => {
                                     id: store.userDebts.id,
                                     initial_debt: store.userDebts.initial_debt,
                                     actual_debt: parseFloat(store.userDebts.actual_debt) - parseFloat(store.userDebts.mensual_payment),
-                                    mensual_payment: store.userDebts.mensual_payment,
+                                    mensual_payment: actualDebt(),
                                     user_uid: store.userDebts.user_uid
                                 })
                                 actions.setItem("message", `Pago completado. Saldo actual: ${formatter.format(parseFloat(store.userAccount.ammount))}`)
-                                setTimeout(()=>{
+                                setTimeout(() => {
                                     actions.setItem("message", null)
                                 }, 5000)
                             }
@@ -87,14 +95,19 @@ const Debts = () => {
                                 <h1 className="mt-1 text-sm md:text-3xl">Próximo pago</h1>
                                 <h1 className=" mx-8 text-lg md:text-4xl absolute right-0">{formatter.format(parseFloat(store.userDebts.mensual_payment))}</h1>
                             </div>
-                            <div className="w-full grid items-center place-items-center">
-                                <button
-                                    onClick={handleSubmit}
-                                    class="hover:shadow-form my-5 rounded-md bg-[#6A64F1] py-3 px-8 text-center text-base font-semibold text-white outline-none"
-                                >
-                                    Adelantar pago
-                                </button>
-                            </div>
+                            {
+                                store.userDebts.actual_debt === 0 ?
+                                    "" :
+                                    <div className="w-full grid items-center place-items-center">
+                                        <button
+                                            onClick={handleSubmit}
+                                            class="hover:shadow-form my-5 rounded-md bg-[#6A64F1] py-3 px-8 text-center text-base font-semibold text-white outline-none"
+                                        >
+                                            Adelantar pago
+                                        </button>
+                                    </div>
+                            }
+
                         </div>
                     </div>
                 </div>

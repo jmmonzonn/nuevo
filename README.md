@@ -63,17 +63,11 @@ realizar depósitos y retiradas.
 
 *** En caso de no ejecutar en local,  ***
 
-*** probablemente tengas que cambiar la ruta del backend ***
-
-*** (localhost/3001) ***
-
-*** TODO utilizar process.env para la ruta de backend ***
+*** probablemente tengas que cambiar la ruta del backend en el archivo .env ***
 
 *** TODO añadir autenticación Google Github y Facebook ***
 
 *** TODO No permitir que los usuarios puedan estar en negativo ***
-
-*** TODO Modificar alert por un tipo de aviso más bonito y llamativo ***
 
 *** los TODOS podría añadirlos fácilmente pero no puedo por falta de tiempo ***
 
