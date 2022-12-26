@@ -5,6 +5,12 @@ const Debts = () => {
 
     const { store, actions } = useContext(Context)
 
+    const formatter = new Intl.NumberFormat('de-DE', {
+        style: 'currency',
+        currency: 'EUR',
+        minimumFractionDigits: 0
+      })
+
     const handleSubmit = () => {
         fetch("http://localhost:3001/debts/" + store.userDebts.id, {
             method: "PUT",
@@ -66,19 +72,19 @@ const Debts = () => {
                         <div className="flex flex-col bg-gray-800 min-w-full rounded-xl ml-6 mr-4 py-4 mt-6 relative">
                             <div className="px-4 mx-4 mt-4 pb-4 flex flex-row text-white">
                                 <h1 className="mt-1 text-sm md:text-3xl">Deuda inicial</h1>
-                                <h1 className=" mx-8 text-lg md:text-4xl absolute right-0">€{parseFloat(store.userDebts.initial_debt)}</h1>
+                                <h1 className=" mx-8 text-lg md:text-4xl absolute right-0">{formatter.format(parseFloat(store.userDebts.initial_debt))}</h1>
                             </div>
                             <div className="px-4 mx-4 mt-4 pb-4 flex flex-row text-white">
                                 <h1 className="mt-1 text-sm md:text-3xl">Cantidad devuelta</h1>
-                                <h1 className=" mx-8 text-lg md:text-4xl absolute right-0 text-green-600">€{(parseInt(store.userDebts.initial_debt) - parseInt(store.userDebts.actual_debt))}</h1>
+                                <h1 className=" mx-8 text-lg md:text-4xl absolute right-0 text-green-600">{formatter.format((parseInt(store.userDebts.initial_debt) - parseInt(store.userDebts.actual_debt)))}</h1>
                             </div>
                             <div className="px-4 mx-4 mt-4 pb-4 flex flex-row text-white">
                                 <h1 className="mt-1 text-sm md:text-3xl">Deuda actual</h1>
-                                <h1 className=" mx-8 text-lg md:text-4xl absolute right-0 text-red-600">€{parseFloat(store.userDebts.actual_debt)}</h1>
+                                <h1 className=" mx-8 text-lg md:text-4xl absolute right-0 text-red-600">{formatter.format(parseFloat(store.userDebts.actual_debt))}</h1>
                             </div>
                             <div className="px-4 mx-4 mt-4 pb-4 flex flex-row text-white">
                                 <h1 className="mt-1 text-sm md:text-3xl">Próximo pago</h1>
-                                <h1 className=" mx-8 text-lg md:text-4xl absolute right-0">€{parseFloat(store.userDebts.mensual_payment)}</h1>
+                                <h1 className=" mx-8 text-lg md:text-4xl absolute right-0">{formatter.format(parseFloat(store.userDebts.mensual_payment))}</h1>
                             </div>
                             <div className="w-full grid items-center place-items-center">
                                 <button

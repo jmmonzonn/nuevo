@@ -5,6 +5,12 @@ const Home = () => {
 
     const { store, actions } = useContext(Context)
 
+    const formatter = new Intl.NumberFormat('de-DE', {
+        style: 'currency',
+        currency: 'EUR',
+        minimumFractionDigits: 0
+      })
+
     useEffect(() => {
         for (const account of store.backend.accounts) {
             if (account.user_uid == store.user.uid) {
@@ -19,7 +25,6 @@ const Home = () => {
             }
         })
     }, [])
-
 
     return (
 
@@ -42,7 +47,7 @@ const Home = () => {
                                 <div className="px-4 mx-4 pb-4 flex flex-col">
                                     <div className="text-white mt-4 flex flex-row  ">
                                         <h1 className="mt-1 text-lg">{store.apiUser?.name}</h1>
-                                        <h1 className=" mx-8 text-green-600 text-xl md:text-4xl absolute right-0">€{store.userAccount.ammount}</h1>
+                                        <h1 className=" mx-8 text-green-600 text-xl md:text-4xl absolute right-0">{formatter.format(store.userAccount.ammount)}</h1>
                                     </div>
                                     <div className="text-gray-200  flex flex-col">
                                         <h1 className="mb-1 text-sm">{store.apiUser?.gender}, {store.apiUser?.species}</h1>
@@ -64,7 +69,7 @@ const Home = () => {
                                 <div className="px-4 mx-4 pb-4 flex flex-col">
                                     <div className="text-white mt-4 flex flex-row">
                                         <h1 className="mt-1 text-lg md:text-3xl">Deudas </h1>
-                                        <h1 className=" mx-8 text-xl text-red-600 md:text-4xl absolute right-0">€{store.userDebts?.actual_debt}</h1>
+                                        <h1 className=" mx-8 text-xl text-red-600 md:text-4xl absolute right-0">{formatter.format(store.userDebts?.actual_debt)}</h1>
                                     </div>
                                 </div>
 

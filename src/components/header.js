@@ -15,12 +15,16 @@ const Header = () => {
             actions.setItem("user", null)
         }
     }
+   
+
+      
     
     return (
 
         <>
-<div className="fixed w-full   bg-gray-800 flex items-center justify-between h-14 text-white z-10"></div>
-<div className="fixed w-full min-w-screen-sm md:max-w-none  bg-gray-800 flex items-center justify-between h-14 text-white z-10">
+
+        
+<div className="fixed w-full   bg-gray-800 flex items-center justify-between h-14 text-white z-10">
             <div class="flex items-center justify-start md:justify-center pl-3  h-14 bg-gray-800 border-none">
                 <Logo className="w-7 h-7 md:w-10 md:h-10 mr-2 rounded-md overflow-hidden " fill={"white"} />
 
