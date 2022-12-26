@@ -11,7 +11,7 @@ const Withdrawals = () => {
         style: 'currency',
         currency: 'EUR',
         minimumFractionDigits: 0
-      })
+    })
 
 
     const handleChange = (e) => {
@@ -38,8 +38,10 @@ const Withdrawals = () => {
                         ammount: parseFloat(store.userAccount.ammount) - parseFloat(newTransfer.ammount),
                         user_uid: store.userAccount.user_uid
                     })
-                    alert(`Transferencia completada. Saldo actual: ${formatter.format(parseFloat(store.userAccount.ammount))}`)
-
+                    actions.setItem("message", `Retiro completado. Saldo actual: ${formatter.format(parseFloat(store.userAccount.ammount))}`)
+                    setTimeout(() => {
+                        actions.setItem("message", null)
+                    }, 5000)
                 }
             })
     }
@@ -47,7 +49,7 @@ const Withdrawals = () => {
     return (
 
         <>
-        
+
             <div className="absolute h-screen w-11/12 md:w-9/12 left-16 top-11 md:left-64 bg-gray-700  flex flex-col gap-9  place-items-start ">
                 <div className=" w-11/12 ">
                     <div className=" bg-gray-800 min-w-full rounded-xl ml-6 py-4 mt-8">

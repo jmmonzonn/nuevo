@@ -8,7 +8,8 @@ const getState = ({ getStore, setStore }) => {
         apiUser: null,
         userAccount: null,
         userDebts: null,
-        actualView: "home"
+        actualView: "home",
+        message: null
       },
       actions: {
         setItem: (string, item) => {

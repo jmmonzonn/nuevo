@@ -79,7 +79,7 @@
     {
       "id": 5,
       "IBAN": "ES340255674394",
-      "ammount": 35005665.80000001,
+      "ammount": 35016489.35000003,
       "user_uid": "MPTpyC14gjWELzopSA4ByEqQiWM2"
     },
     {
@@ -145,7 +145,7 @@
     {
       "id": 5,
       "initial_debt": 7500,
-      "actual_debt": 1396.8899999999994,
+      "actual_debt": -1692.5600000000009,
       "mensual_payment": 237.65,
       "user_uid": "MPTpyC14gjWELzopSA4ByEqQiWM2"
     },

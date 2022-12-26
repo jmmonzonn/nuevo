@@ -11,7 +11,7 @@ const Deposits = () => {
         style: 'currency',
         currency: 'EUR',
         minimumFractionDigits: 0
-      })
+    })
 
 
     const handleChange = (e) => {
@@ -38,8 +38,10 @@ const Deposits = () => {
                         ammount: parseFloat(store.userAccount.ammount) + parseFloat(newTransfer.ammount),
                         user_uid: store.userAccount.user_uid
                     })
-                    alert(`Transferencia completada. Saldo actual: ${formatter.format(parseFloat(store.userAccount.ammount))}`)
-
+                    actions.setItem("message", `Depósito completado. Saldo actual: ${formatter.format(parseFloat(store.userAccount.ammount))}`)
+                    setTimeout(() => {
+                        actions.setItem("message", null)
+                    }, 5000)
                 }
             })
     }

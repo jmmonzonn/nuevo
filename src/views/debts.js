@@ -50,8 +50,10 @@ const Debts = () => {
                                     mensual_payment: store.userDebts.mensual_payment,
                                     user_uid: store.userDebts.user_uid
                                 })
-                                alert(`Pago completado. Saldo actual: ${formatter.format(parseFloat(store.userAccount.ammount))}`)
-
+                                actions.setItem("message", `Pago completado. Saldo actual: ${formatter.format(parseFloat(store.userAccount.ammount))}`)
+                                setTimeout(()=>{
+                                    actions.setItem("message", null)
+                                }, 5000)
                             }
                         })
                 }
