@@ -38,7 +38,7 @@ const Home = () => {
 
                     <div className="absolute h-screen w-11/12 md:w-9/12 left-16 top-11 md:left-64 bg-gray-700  flex flex-col gap-9  place-items-start ">
                         <div className=" w-11/12 ">
-                            <div className="flex flex-row bg-gray-800 min-w-full rounded-xl ml-6 py-4 mt-6 relative">
+                            <div className="flex flex-row bg-gray-800 min-w-full rounded-xl ml-6 py-4 mt-8 relative">
                                 <div className='hidden md:flex mx-10  items-center space-x-4 border-red-500'>
                                     <a className='flex-shrink-0 w-32 h-32 overflow-hidden rounded-full'>
                                         <img src={store.apiUser?.image} className='object-cover w-full h-full' />
