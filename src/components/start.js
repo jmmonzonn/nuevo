@@ -19,10 +19,7 @@ const Start = () => {
                                 <p className="">tubanco</p>
                             </div>
                         </div>
-
                     </div>
-
-
                 </div>
             </div>
 

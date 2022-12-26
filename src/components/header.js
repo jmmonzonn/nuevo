@@ -1,7 +1,7 @@
-import { ReactComponent as Logo } from '../falso_back_end/logobank2.svg'
-import { logout } from '../auth'
 import React, { useContext } from "react"
 import { Context } from "../store/appContext"
+import { logout } from '../auth'
+import { ReactComponent as Logo } from '../falso_back_end/logobank2.svg'
 
 const Header = () => {
 

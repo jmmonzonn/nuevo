@@ -1,20 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-import Home from './views/home';
-import Login from './components/login';
 import React, { useEffect, useState, useContext } from 'react';
 import { checkLogin as checkLog } from './auth';
 import { Context } from './store/appContext';
-
-import Start from './components/start';
-import Sidebar from './components/sidebar';
-import Header from './components/header';
-import Transfers from './views/transfers';
 import injectContext from './store/appContext';
+import Start from './components/start';
+import Login from './components/login';
+import Header from './components/header';
+import Sidebar from './components/sidebar';
+import Home from './views/home';
+import Transfers from './views/transfers';
 import Deposits from './views/deposits';
 import Withdrawals from './views/withdrawals';
 import Debts from './views/debts';
-
+import './App.css';
 
 const App = () => {
 
