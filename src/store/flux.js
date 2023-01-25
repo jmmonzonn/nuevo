@@ -18,7 +18,11 @@ const getState = ({ getStore, setStore }) => {
         },
         funcionquenosirveparanada: () => {
           
-        }
+        },
+        funcionasdadf: () => {
+          
+        },
+
         },
     };
   };
