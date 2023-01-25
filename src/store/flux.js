@@ -16,6 +16,13 @@ const getState = ({ getStore, setStore }) => {
             let store = getStore()
             setStore({[string]: item})
         },
+        funcionquenosirveparanada: () => {
+          
+        },
+        funcionasdadf: () => {
+          
+        },
+
         funcionquenosasdfirveparanada: () => {
 
         }
