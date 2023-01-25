@@ -23,6 +23,9 @@ const getState = ({ getStore, setStore }) => {
           
         },
 
+        funcionquenosasdfirveparanada: () => {
+
+        }
         },
     };
   };
